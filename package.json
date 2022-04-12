@@ -1,0 +1,31 @@
+{
+  "name": "browserstack-scheduling",
+  "version": "1.0.0",
+  "description": "BrowserStack Scheduling",
+  "main": "index.js",
+  "scripts": {
+    "nonbs": "testcafe chrome test1.js",
+    "test": "./node_modules/.bin/testcafe '@browserStack/browserstack:chrome@100.0:Windows 10' test.js --test-meta smoke=true --test-scheduling"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjohnsonatgm/BrowserStack-Scheduling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjohnsonatgm/BrowserStack-Scheduling/issues"
+  },
+  "homepage": "https://github.com/jjohnsonatgm/BrowserStack-Scheduling#readme",
+  "devDependencies": {
+    "@browserstack/testcafe": "^1.8.6",
+    "@browserstack/testcafe-browser-provider-browserstack": "^1.13.3"
+  },
+  "dependencies": {
+    "axe-testcafe": "^3.0.0",
+    "testcafe-reporter-allure-plus": "^1.1.3",
+    "testcafe-reporter-html": "^1.4.6",
+    "testcafe-reporter-junit": "^3.0.2",
+    "testcafe-reporter-spec": "^2.1.1"
+  }
+}
